@@ -1,3 +1,2 @@
 kubeconfig filter=git-crypt diff=git-crypt
 flux-key.yaml filter=git-crypt diff=git-crypt
-
