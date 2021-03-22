@@ -3,4 +3,6 @@
 creation_rules:
   # Encrypt secret files with GPG key
   - encrypted_regex: '^(data|stringData)$'
-    pgp: 'E2D99EA2EE98E4677A00C64769B7868093023FE3'
+    pgp: >-
+      E2D99EA2EE98E4677A00C64769B7868093023FE3,
+      9D499331E77AB71942B0BD98C18E05E9EFD35DA6
