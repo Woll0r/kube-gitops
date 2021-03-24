@@ -1,0 +1,32 @@
+---
+apiVersion: cert-manager.io/v1alpha2
+kind: ClusterIssuer
+metadata:
+  name: linode-letsencrypt-prod
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: wolfgang.vandevenne@telenet.be
+    privateKeySecretRef:
+      name: linode-letsencrypt-prod
+    solvers:
+      - dns01:
+          webhook:
+            solverName: linode
+            groupName: acme.testkube.cardboardbox.be
+---
+apiVersion: cert-manager.io/v1alpha2
+kind: ClusterIssuer
+metadata:
+  name: linode-letsencrypt-staging
+spec:
+  acme:
+    server: https://acme-staging-v02.api.letsencrypt.org/directory
+    email: wolfgang.vandevenne@telenet.be
+    privateKeySecretRef:
+      name: linode-letsencrypt-staging
+    solvers:
+      - dns01:
+          webhook:
+            solverName: linode
+            groupName: acme.testkube.cardboardbox.be
