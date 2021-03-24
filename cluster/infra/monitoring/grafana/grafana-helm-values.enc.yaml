@@ -5,13 +5,14 @@ kind: Secret
 metadata:
     creationTimestamp: null
     name: grafana-helm-values
+    namespace: monitoring
 sops:
     kms: []
     gcp_kms: []
     azure_kv: []
     hc_vault: []
-    lastmodified: '2021-03-24T21:20:53Z'
-    mac: ENC[AES256_GCM,data:GhtjdlTFdolJY3mPtJ/9day/ppjZx9+mE0DB9i7ifT+ct15NyXOp1KrBxXY0mVFo2QWIPNHiUsGfbiyZVpBH6FG+U0o7E7g6lOgP/eoWYfDepDteg6W7RVBEOz5LxE1U50WEVQkZ2eqRhQaVssFFqu0nfbTfm0Rv3mTdRZNZ+5Y=,iv:E96T+s3tgI3GT/fgFltlR2fP2QhtMfsIkCQbvdfdpls=,tag:cyRZGCqbL6xFwQ3DwLe/iA==,type:str]
+    lastmodified: '2021-03-24T21:23:56Z'
+    mac: ENC[AES256_GCM,data:aGF8TKe1BaSBYeifhfzq9K6DVXkvMMPHahKhBfOfoGh4VbT1G1fPh5meE5Ag8RFx7Y645Jguoato/1ksZI4Bkee8yEH0H4etGoPVEnmp+esz4OvPiLOS6O5c20s6DGmtLi8DNNxzj5wHj3YQBKs/63CbXNa/KxUnNJKcxxsSvKU=,iv:7XRNZtxwDhqRV8grLrfKloDSlvsuwCP+e1sWuyC1T9w=,tag:Pwma2xTWcnKhTv07XGuN2Q==,type:str]
     pgp:
     -   created_at: '2021-03-24T21:20:52Z'
         enc: |-
