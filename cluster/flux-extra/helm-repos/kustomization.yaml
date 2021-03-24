@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
 - bitnami-charts.yaml
 - coredns-charts.yaml
+- cert-manager-linode-webhook-charts-git.yaml
 - grafana-charts.yaml
 - ingress-nginx-charts.yaml
 - jetstack-charts.yaml
