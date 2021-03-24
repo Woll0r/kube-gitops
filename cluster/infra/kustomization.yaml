@@ -13,4 +13,5 @@ resources:
 - kube-system/ingress-nginx/ingress-nginx.yaml
 - longhorn-system/longhorn/longhorn.yaml
 - monitoring/grafana/grafana.yaml
+- monitoring/grafana/grafana-helm-values.enc.yaml
 - monitoring/kube-prom-stack/kube-prom-stack.yaml
