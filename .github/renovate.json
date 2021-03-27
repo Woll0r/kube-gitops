@@ -4,9 +4,7 @@
   "semanticCommits": "enabled",
   "dependencyDashboard": true,
   "dependencyDashboardTitle": "Renovate Dashboard",
-  // do not notify on closed unmerged PRs
   "suppressNotifications": ["prIgnoreNotification"],
-  // only rebase PRs when there's a conflict
   "rebaseWhen": "conflicted",
   "kubernetes": {
     "fileMatch": ["cluster/.+\\.yaml$"],
@@ -18,7 +16,6 @@
     "fileMatch": ["cluster/.+helm-release\\.yaml$"]
   },
   "regexManagers": [
-    // regexManager to read and process HelmRelease files
     {
       "fileMatch": ["cluster/.+helm-release\\.yaml$"],
       "matchStrings": [
@@ -28,12 +25,10 @@
     }
   ],
   "packageRules": [
-    // setup datasources
     {
       "matchDatasources": ["helm"],
       "separateMinorPatch": true
     },
-    // global docker datasource settings
     {
       "matchDatasources": ["docker"],
       "enabled": true,
@@ -42,7 +37,6 @@
       "matchUpdateTypes": ["major", "minor", "patch"],
       "separateMinorPatch": true
     },
-    // add labels according to package and update types
     {
       "matchDatasources": ["docker"],
       "matchUpdateTypes": ["major"],
@@ -73,7 +67,6 @@
       "matchUpdateTypes": ["patch"],
       "labels": ["renovate/helm-release", "dependency/patch"]
     },
-    // version strategies
     {
       "matchDatasources": ["docker"],
       "versioning": "loose",
