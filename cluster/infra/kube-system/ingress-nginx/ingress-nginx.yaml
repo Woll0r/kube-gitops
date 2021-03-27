@@ -41,7 +41,7 @@ spec:
           enabled: true
           namespace: kube-system
       extraArgs:
-        default-ssl-certificate: "kube-system/testkube-cardboardbox-be-tls"
+        default-ssl-certificate: "kube-system/kube-cardboardbox-be-tls"
       resources:
         requests:
           memory: 250Mi
