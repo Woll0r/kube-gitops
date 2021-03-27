@@ -57,7 +57,7 @@ spec:
               storageClassName: "longhorn"
               resources:
                 requests:
-                  storage: 10Gi
+                  storage: 1Gi
     nodeExporter:
       serviceMonitor:
         relabelings:
@@ -115,4 +115,4 @@ spec:
               storageClassName: "longhorn"
               resources:
                 requests:
-                  storage: 50Gi
+                  storage: 5Gi
