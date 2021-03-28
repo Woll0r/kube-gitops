@@ -9,6 +9,7 @@ resources:
 - flux-system/gotk-monitoring.yaml
 - kube-system/coredns/coredns.yaml
 - kube-system/etcd/etcd.yaml
+- kube-system/external-dns/external-dns.yaml
 - kube-system/ingress-nginx/certificate.yaml
 - kube-system/ingress-nginx/ingress-nginx.yaml
 - longhorn-system/longhorn/longhorn.yaml
