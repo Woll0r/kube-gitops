@@ -8,10 +8,13 @@ resources:
 - cert-manager/cert-manager-webhook-linode/linode-credentials.enc.yaml
 - flux-system/gotk-monitoring.yaml
 - kube-system/coredns/coredns.yaml
+- kube-system/dex/dex.yaml
+- kube-system/dex/dex-helm-values.enc.yaml
 - kube-system/etcd/etcd.yaml
 - kube-system/external-dns/external-dns.yaml
 - kube-system/ingress-nginx/certificate.yaml
 - kube-system/ingress-nginx/ingress-nginx.yaml
+- kube-system/oauth2-proxy/oauth2-proxy-helm-values.enc.yaml
 - longhorn-system/longhorn/longhorn.yaml
 - monitoring/grafana/grafana.yaml
 - monitoring/grafana/grafana-helm-values.enc.yaml

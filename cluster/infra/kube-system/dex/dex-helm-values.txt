@@ -1,0 +1,56 @@
+config: |-
+  issuer: https://dex.testkube.cardboardbox.be
+
+  storage:
+    type: kubernetes
+    config:
+      inCluster: true
+  web:
+    http: 0.0.0.0:5556
+
+  frontend:
+    theme: "coreos"
+    issuer: "holthome"
+    issuerUrl: "https://testkube.cardboardbox.be"
+    logoUrl: http://icons.iconarchive.com/icons/icons-land/metro-halloween/512/Cool-icon.png
+
+  expiry:
+    signingKeys: "6h"
+    idTokens: "24h"
+
+  logger:
+    level: debug
+    format: json
+
+  oauth2:
+    responseTypes: ["code", "token", "id_token"]
+    skipApprovalScreen: true
+
+  connectors:
+
+  # GitHub configure 'OAuth Apps' -> 'New OAuth App', add callback URL
+  # https://github.com/settings/developers
+  - type: github
+    id: github
+    name: GitHub
+    config:
+      clientID: $GITHUB_CLIENT_ID
+      clientSecret: $GITHUB_CLIENT_SECRET
+      redirectURI: https://dex.testkube.cardboardbox.be/callback
+      # 'orgs' can be used to map groups from Github
+      # https://github.com/coreos/dex/blob/master/Documentation/connectors/github.md
+      orgs:
+      - name: cardboardboxhome
+
+  staticClients:
+  - id: grafana
+    name: grafana
+    secret: $DEX_GRAFANA_CLIENT_SECRET
+    redirectURIs:
+      - https://grafana.testkube.cardboardbox.be/login/generic_oauth
+
+  - id: oauth2-proxy
+    name: oauth2-proxy
+    secret: $DEX_OAUTH2_PROXY_CLIENT_SECRET
+    redirectURIs:
+      - https://auth.testkube.cardboardbox.be/oauth2/callback
