@@ -29,3 +29,6 @@ spec:
       enabled: true
       host: longhorn.testkube.cardboardbox.be
       tls: true
+      annotations:
+        nginx.ingress.kubernetes.io/auth-url: "https://auth.testkube.cardboardbox.be/oauth2/auth"
+        nginx.ingress.kubernetes.io/auth-signin: "https://auth.testkube.cardboardbox.be/oauth2/start"
