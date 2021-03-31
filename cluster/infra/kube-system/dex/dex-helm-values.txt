@@ -1,4 +1,4 @@
-config: |-
+config:
   issuer: https://dex.testkube.cardboardbox.be
 
   storage:
@@ -10,7 +10,7 @@ config: |-
 
   frontend:
     theme: "coreos"
-    issuer: "holthome"
+    issuer: "cardboardboxhome"
     issuerUrl: "https://testkube.cardboardbox.be"
     logoUrl: http://icons.iconarchive.com/icons/icons-land/metro-halloween/512/Cool-icon.png
 
