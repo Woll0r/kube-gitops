@@ -27,7 +27,9 @@ spec:
     ingress:
       enabled: true
       hosts:
-        - dex.testkube.cardboardbox.be
+        - host: dex.testkube.cardboardbox.be
+          paths:
+            - path: /
       tls:
         - hosts:
             - dex.testkube.cardboardbox.be
