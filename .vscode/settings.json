@@ -1,5 +1,9 @@
 {
     "yaml.schemas": {
         "Kubernetes": "cluster/**.yaml"
+    },
+
+    "[markdown]": {
+        "editor.rulers": [80]
     }
 }

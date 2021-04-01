@@ -35,6 +35,13 @@ repos:
     rev: 0.2.0
     hooks:
       - id: fix-smartquotes
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.27.1
+    hooks:
+      - id: markdownlint
+        name: Run markdownlint
+        description: Lint markdown files
+        entry: markdownlint -c .github/.markdownlint.yaml
   - repo: local
     hooks:
       - id: check-sops-secrets
