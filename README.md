@@ -5,7 +5,7 @@ Home Kubernetes cluster using Flux2
 ## Documentation
 
 You can find the documentation
-[https://woll0r.github.com/kube-gitops](right here)
+[right here](https://woll0r.github.com/kube-gitops/)
 
 ## Inspirations
 
