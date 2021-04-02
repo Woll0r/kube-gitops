@@ -20,3 +20,4 @@ resources:
 - monitoring/grafana/helm-release.yaml
 - monitoring/grafana/grafana-helm-values.enc.yaml
 - monitoring/kube-prom-stack/helm-release.yaml
+- system-upgrade/system-upgrade-controller/system-upgrade-controller.yaml
