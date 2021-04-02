@@ -42,10 +42,10 @@ repos:
         name: Run markdownlint
         description: Lint markdown files
         entry: markdownlint -c .github/.markdownlint.yaml
-  # - repo: local
-  #   hooks:
-  #     - id: check-sops-secrets
-  #       name: Check for unencrypted SOPS secrets
-  #       entry: ./hacks/check-sops-secrets-hook.sh
-  #       language: script
-  #       files: \.(ya?ml)$
+  - repo: local
+    hooks:
+      - id: check-sops-secrets
+        name: Check for unencrypted SOPS secrets
+        entry: ./hacks/check-sops-secrets-hook.sh
+        language: script
+        files: \.(ya?ml)$
