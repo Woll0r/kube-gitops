@@ -14,6 +14,8 @@ resources:
 - kube-system/external-dns/helm-release.yaml
 - kube-system/ingress-nginx/certificate.yaml
 - kube-system/ingress-nginx/helm-release.yaml
+- kube-system/intel-gpu-plugin/helm-release.yaml
+- kube-system/node-feature-discovery/helm-release.yaml
 - kube-system/oauth2-proxy/oauth2-proxy-helm-values.enc.yaml
 - kube-system/oauth2-proxy/helm-release.yaml
 - longhorn-system/longhorn/helm-release.yaml
