@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
+     <loc>https://woll0r.github.io/kube-gitops/</loc>
+     <lastmod>2021-04-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://woll0r.github.io/kube-gitops/flux/</loc>
+     <lastmod>2021-04-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://woll0r.github.io/kube-gitops/repostructure/</loc>
+     <lastmod>2021-04-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>
