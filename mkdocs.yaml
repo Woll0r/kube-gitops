@@ -15,6 +15,7 @@ edit_uri: ""
 nav:
   - Home: index.md
   - Flux: flux.md
+  - Repo structure: repostructure.md
 
 extra:
   social:
