@@ -6,6 +6,7 @@ resources:
 - flux-system/discord
 - flux-system/github
 - flux-system/helm-repos
+- apps.yaml
 - infra.yaml
 - crds.yaml
 - namespaces.yaml
