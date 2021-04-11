@@ -4,5 +4,6 @@ kind: Kustomization
 resources:
 - cert-manager.yaml
 - longhorn-system.yaml
+- media.yaml
 - monitoring.yaml
 - system-upgrade.yaml
