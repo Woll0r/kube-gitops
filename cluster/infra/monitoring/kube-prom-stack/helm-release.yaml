@@ -43,6 +43,7 @@ spec:
             equal: ["alertname", "namespace"]
       ingress:
         enabled: true
+        pathType: Prefix
         annotations:
           nginx.ingress.kubernetes.io/auth-url: "https://auth.testkube.cardboardbox.be/oauth2/auth"
           nginx.ingress.kubernetes.io/auth-signin: "https://auth.testkube.cardboardbox.be/oauth2/start"
@@ -92,6 +93,7 @@ spec:
     prometheus:
       ingress:
         enabled: true
+        pathType: Prefix
         annotations:
           nginx.ingress.kubernetes.io/auth-url: "https://auth.testkube.cardboardbox.be/oauth2/auth"
           nginx.ingress.kubernetes.io/auth-signin: "https://auth.testkube.cardboardbox.be/oauth2/start"
