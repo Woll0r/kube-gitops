@@ -81,7 +81,7 @@
     {
       "matchDatasources": ["helm"],
       "matchPackageNames": ["kube-prometheus-stack"],
-      "schedule": ["after 5:00 pm"]
+      "schedule": ["after 11:00 pm on Sunday"]
     }
   ]
 }
