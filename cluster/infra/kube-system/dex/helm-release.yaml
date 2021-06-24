@@ -24,6 +24,8 @@ spec:
     image:
       repository: dexidp/dex
       tag: v2.28.1
+    env:
+      KUBERNETES_POD_NAMESPACE: kube-system
     ingress:
       enabled: true
       hosts:
