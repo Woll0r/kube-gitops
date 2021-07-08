@@ -11,7 +11,7 @@ spec:
   - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
   nfs:
-    server: nas-syno-02.home.cardboardbox.be
+    server: nas-syno-01.home.cardboardbox.be
     path: /volume1/Media
   mountOptions:
   - nfsvers=3
@@ -33,7 +33,7 @@ spec:
   - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
   nfs:
-    server: nas-syno-02.home.cardboardbox.be
+    server: nas-syno-01.home.cardboardbox.be
     path: /volume1/Downloads
   mountOptions:
   - nfsvers=3
